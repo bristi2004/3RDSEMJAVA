@@ -1,0 +1,23 @@
+import java.util.*;
+class Cirelearea
+{
+    void circle (int r)
+    {
+        System.out.println("Aoc="+(3.14*r*r));
+    }
+   
+}
+class Circlecfn
+{
+    void circle(int r)
+    {
+        System.out.println("circumfernance of circle="+(2*3.14*r));
+    }
+    public static void main(String args[])
+    {
+        Cirelearea c1 = new Cirelearea();
+        Circlecfn c2 = new Circlecfn();
+        c1.circle(4);
+        c1.circle(3);
+    }
+}
