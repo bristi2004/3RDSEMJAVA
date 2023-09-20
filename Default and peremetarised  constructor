@@ -1,0 +1,18 @@
+//default & parameterized constructor
+import java.util.*;
+class CArea{
+    CArea(){
+        int r;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter r value");
+        r=sc.nextInt();
+        System.out.println("Area of circle=" +(3.14*r*r));
+    }
+    CArea(int l, int b){
+        System.out.println("Aor=" +(l*b));
+    }
+    public static void main(String arg[]){
+        CArea obj1=new CArea();
+        CArea obj2=new CArea(2,4);
+    }
+}
