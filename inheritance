@@ -1,0 +1,15 @@
+import java.util.*;
+class Employee
+{
+int salary=10000;
+}
+class Emp  extends Employee
+{
+int allowances=1000;
+ public static void main(String arg[])
+{
+Emp e=new Emp();
+System.out.println("salary="+e.salary);
+System.out.println("new salary="+(e.salary+e.allowances));
+}
+}
