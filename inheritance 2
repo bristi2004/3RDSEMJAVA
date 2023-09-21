@@ -1,0 +1,33 @@
+import java.util.*;
+class Stupersonal
+{
+String sname,rno;
+int s1,s2;
+void getdata()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter rno,Sname");
+rno=sc.next();
+sname=sc.next();
+s1=sc.nextInt();
+s2=sc.nextInt();
+}
+}
+class Stumain extends Stupersonal
+{
+int tot,avg;
+void calc()
+{
+tot=s1+s2;
+avg=tot/2;
+System.out.println("total="+tot);
+System.out.println("Avg="+avg);
+}
+
+public static void main(String arg[])
+{
+Stumain s=new Stumain();
+s.getdata();
+s.calc();
+}
+}
