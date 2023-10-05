@@ -1,0 +1,23 @@
+interface Printable {
+    void Print();
+}
+
+interface Showable {
+    void Show();
+}
+
+class interfacemain implements Printable, Showable {
+    public void Print() {
+        System.out.println("printable interface method");
+    }
+
+    public void Show() {
+        System.out.println("Showable interface method");
+    }
+
+    public static void main(String arg[]) {
+        interfacemain i = new interfacemain();
+        i.Print();
+        i.Show();
+    }
+}
